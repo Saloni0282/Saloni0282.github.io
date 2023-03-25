@@ -1,29 +1,30 @@
 const header = document.querySelector("header");
 
 window.addEventListener("scroll", function () {
-    header.classList.toggle("sticky", window.scrollY > 0);
+  header.classList.toggle("sticky", this.window.scrollY > 100);
 });
 
 let menu = document.querySelector("#menu-icon");
-let navbar = document.querySelector(".navbar");
+let nav = document.querySelector(".navlist");
 
 menu.onclick = () => {
-    menu.classList.toggle('bx-bx');
-    navbar.classList.toggle("active");
-}
-
-window.onscroll = () => {
-  menu.classList.remove("bx-bx");
-  navbar.classList.remove("active");
+  menu.classList.toggle("bx-x");
+  nav.classList.toggle("open");
 };
 
+window.onscroll = () => {
+  menu.classList.remove("bx-x");
+  nav.classList.remove("open");
+};
 const sr = ScrollReveal({
-    distance: '25px',
-    duration: 2500,
-    reset:true
-})
+  distance: "25px",
+  duration: 2500,
+  reset: true,
+});
 
-sr.reveal('.home-text', { delay: 190, origin: 'bottom' })
+sr.reveal(".home-text", { delay: 190, origin: "bottom" });
 
-sr.reveal(".About,.Services,.Portfolio,.Contact,.Skills,.Projects",{  delay: 200,  origin: "bottom",
+sr.reveal("#about,#skills,#projects,#githubs,#contact", {
+  delay: 200,
+  origin: "bottom",
 });
