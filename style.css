@@ -8,7 +8,7 @@
   scroll-behavior: smooth;
 }
 :root {
-  --second-bg-color: #202020;
+  --background-color: #202020;
   --bg-color: #020312;
   --text-color: #fff;
   --main-color: #eb4a4a;
@@ -255,7 +255,7 @@ header.sticky {
 /* -----skills--------- */
 
 #skills {
-  background: var(--second-bg-color);
+  background: var(--background-color);
 }
 .main-text {
   text-align: center;
@@ -410,7 +410,7 @@ header.sticky {
 /* -----contact--------- */
 
 #contact {
-  background: var(--second-bg-color);
+  background: var(--background-color);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
