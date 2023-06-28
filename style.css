@@ -78,7 +78,6 @@ section {
   color: white;
 }
 
-
 .navlist a.active {
   color: var(--main-color);
 }
@@ -324,18 +323,21 @@ header.sticky {
   margin: auto;
   margin-top: 50px;
 }
-
+  #calendar {
+    width: 100%;
+  }
 #stat {
-  margin-top: 50px;
+  margin-top: 60px;
   display: flex;
+ flex-direction: column;
   justify-content: space-between;
   gap: 10px;
 }
-#github-top-langs {
+
+/* #github-top-langs {
   border: 0px solid crimson;
-  height: 195px;
-  margin-top: -10%;
-}
+  
+} */
 
 /* ------project----------- */
 #nav-link-projects {
@@ -550,8 +552,16 @@ form textarea {
   .footer {
     padding: 15px 3%;
   }
+
   #calendar {
     width: 100%;
+  }
+
+  #stat {
+    margin-top: 100px !important;
+    
+    margin: auto;
+    
   }
   .github1 {
     width: 100%;
@@ -577,9 +587,8 @@ form textarea {
     height: 87vh;
   }
   #stat {
-    margin-top: 50px;
-    display: grid;
-    justify-content: space-between;
+    margin-top: 100px !important;
+   margin: auto;
   }
   #calendar {
     width: 100%;
@@ -614,9 +623,8 @@ form textarea {
     grid-template-columns: 1fr;
   }
   #stat {
-    margin-top: 50px;
-    display: grid;
-    justify-content: space-between;
+    margin-top: 200px;
+   margin: auto;
   }
   #calendar {
     width: 100%;
@@ -669,7 +677,8 @@ form textarea {
     width: 100%;
   }
   #stat {
-    display: grid;
+    margin-top: 100px;
+   margin: auto;
   }
   .github1 {
     width: 100%;

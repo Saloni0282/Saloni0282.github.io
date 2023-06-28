@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="shortcut icon" type="image/png" href="images/c-alphabet-letter-logo-for-business-and-company-with-wings-and-black-and-white-grey-color-corporate-brading-and-lettering-icon-with-simple-design-vector.webp">
+    
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+            <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
 </head>
 <body> 
     <!--Nav Bar -->
@@ -95,7 +98,7 @@
           <div class="education-names">
             <span class="education-name">Full Stack Web Development</span> 
             <p class="education-platform ">Masai School</p>
-            <p class="education-duration ">October 2022 - Present</p>
+            <p class="education-duration ">October 2022 - July 2023</p>
 
           </div>
         </div>
@@ -178,6 +181,14 @@
 
             <div class="skills-card">
                 <div class="skills-card-img">
+                    <i style="font-size: 100px;" class='bx bx-sushi'  ></i>
+                </div>
+                <h3 class="skills-card-name">MySql</h3>
+                
+            </div>
+
+            <div class="skills-card">
+                <div class="skills-card-img">
                     <i style="font-size: 100px;" class="fa-solid fa-cubes" ></i>
                 </div>
                 <h3 class="skills-card-name">DSA</h3>
@@ -188,31 +199,38 @@
 
     </section>
     <!--Stats-->
+    <section>
     <div class="max-width" id="githubs">
         <div class="main-text">
             
             <h2><span>GitHub </span>Statistics</h2>
 
         </div>
+
         <div id="stat">
             
-        </div>
+        
+        
             <img class = "github1" id="github-top-langs" src='https://github-readme-stats.vercel.app/api/top-langs?username=saloni0282&show_icons=true&locale=en&layout=compact&theme=dark&background=000000' >
             
             <img class = "github1" id="github-stats-card" src='https://github-readme-stats.vercel.app/api?username=saloni0282&show_icons=true&locale=en&theme=dark&background=000000' >
             
             <img class = "github1" id="github-streak-stats" src='https://github-readme-streak-stats.herokuapp.com?user=Saloni0282&theme=dark&background=000000'/>
-        <div>
-            <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-            <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
-            <div class="calendar  react-activity-calendar">
+        
+            
+           
+            <div id="calendar" class="calendar github1 react-activity-calendar">
             Loading the data just for you.
-            </div>
+
+        
             <script>
             GitHubCalendar(".calendar", "Saloni0282");
             GitHubCalendar(".calendar", "Saloni0282", { responsive: true });
             </script>
-        </div>
+       </div>
+       </div>
+      
+      
   </div>      
 </section>
 
@@ -335,6 +353,7 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./index.js"></script>
 </body>
+        
 </html>
 
 
