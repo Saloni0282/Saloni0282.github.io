@@ -270,15 +270,17 @@ header.sticky {
 }
 #skills-part {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  /* grid-template-columns: repeat(auto-fit, minmax(250px, auto)); */
+  grid-template-columns: repeat(auto-fit, minmax(150px, auto));
   align-items: center;
-  gap: 2.5rem;
+  gap: 2rem;
   margin-top: 2rem;
 }
 .skills-card {
   background: #12141c;
   border-top: 5px solid transparent;
-  padding: 35px 25px;
+  /* padding: 35px 25px; */
+  padding: 10px 12px;
   border-radius: 0.5rem;
   text-align: center;
   justify-content: center;
@@ -287,16 +289,16 @@ header.sticky {
 }
 
 .skills-card-img i {
-  font-size: 32px;
+  font-size: 22px;
   margin-bottom: 20px;
 }
 
 .skills-card h3 {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 400;
   color: var(--text-color);
   text-align: center;
-  margin: 15px 0;
+  margin: 12px 0px;
   transition: all 0.4s ease;
 }
 .skills-card p {
@@ -318,7 +320,7 @@ header.sticky {
 }
 
 /* github------ */
-.max-width {
+/* .max-width {
   width: 80%;
   margin: auto;
   margin-top: 50px;
@@ -332,12 +334,50 @@ header.sticky {
  flex-direction: column;
   justify-content: space-between;
   gap: 10px;
+} */
+
+
+/* #github {
+  padding: 1rem;
+  text-align: center;
+  margin: auto;
+
+
+} */
+
+
+#stat {
+ 
+  width: 95%;
+  margin: auto;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+
 }
 
-/* #github-top-langs {
+
+#calendar_Saloni{
+  width: 95%;
+  margin: auto;
+}
+
+#stat img {
+  width: 100%;
+}
+
+#github-top-langs {
   border: 0px solid crimson;
-  
-} */
+  height: 160px;
+  margin: auto;
+  margin-top: 5%;
+
+}
+
+
 
 /* ------project----------- */
 #nav-link-projects {
@@ -407,7 +447,102 @@ header.sticky {
 }
 .project-card:hover .card {
   height: 100%;
+} 
+/* 
+#projects {
+  padding: 2rem;
 }
+
+#projects .readmore {
+  text-align: center;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+#project-full {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1rem;
+  margin-bottom: 7rem;
+}
+
+.project-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 2rem 0;
+}
+
+.project-content .project-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-content .project-image img {
+  transform-origin: 0 0;
+  transition: transform 2s, filter 2s ease-in-out;
+  filter: grayscale(20%);
+}
+
+.project-content .project-image:hover img {
+  filter: brightness(100%);
+  transform: scale(1.16);
+}
+
+/* Project CTA */
+/*.project-content .btn {
+  position: absolute;
+  top: 40px;
+  left: 0;
+}
+
+.project-content .project-image:hover .btn {
+  opacity: 1;
+}
+
+.project-content .project-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.project-content .btn {
+  opacity: 0;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.card-content a {
+  text-decoration: underline;
+  transition: 0.2s ease-in-out;
+}
+
+.card-content a:hover {
+  color: var(--primary-color);
+}
+
+.card-content h2 {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+}
+
+.card-content .project-info .stack {
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.card-content .project-links a {
+  margin-right: 0.4rem;
+} */
 
 /* -----contact--------- */
 
@@ -553,7 +688,7 @@ form textarea {
     padding: 15px 3%;
   }
 
-  #calendar {
+  /* #calendar {
     width: 100%;
   }
 
@@ -565,7 +700,7 @@ form textarea {
   }
   .github1 {
     width: 100%;
-  }
+  } */
   #github-top-langs {
     border: 0px solid crimson;
     height: 198px;
@@ -586,7 +721,7 @@ form textarea {
   #home {
     height: 87vh;
   }
-  #stat {
+  /* #stat {
     margin-top: 100px !important;
    margin: auto;
   }
@@ -595,7 +730,7 @@ form textarea {
   }
   .github1 {
     width: 100%;
-  }
+  } */
   #nav-link-projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
@@ -622,7 +757,7 @@ form textarea {
   #contact {
     grid-template-columns: 1fr;
   }
-  #stat {
+  /* #stat {
     margin-top: 200px;
    margin: auto;
   }
@@ -631,7 +766,7 @@ form textarea {
   }
   .github1 {
     width: 100%;
-  }
+  } */
   #nav-link-projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
@@ -673,14 +808,42 @@ form textarea {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
   }
-  #calendar {
+  /* #calendar {
     width: 100%;
+  }*/
+ #stat {
+    margin: auto;
+    grid-template-columns: repeat(3,1fr);
+    margin-bottom: 2%;
   }
-  #stat {
-    margin-top: 100px;
-   margin: auto;
-  }
-  .github1 {
+  
+  /*.github1 {
     width: 100%;
+  } */
+}
+
+
+@media (max-width: 700px) {
+
+#stat {
+    margin: auto;
+    grid-template-columns: repeat(1,1fr);
+    margin-bottom: 2%;
+  }
+}
+
+@media (max-width: 500px) {
+#stat {
+    margin: auto;
+    grid-template-columns: repeat(1,1fr);
+    margin-bottom: 2%;
+  }
+}
+
+@media (max-width: 400px) {
+ #stat {
+    margin: auto;
+    grid-template-columns: repeat(1,1fr);
+    margin-bottom: 2%;
   }
 }
