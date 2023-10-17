@@ -2,459 +2,765 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My PersonalPortFolio</title>
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <script src="https://kit.fontawesome.com/6f3f4b23f1.js" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="shortcut icon" type="image/png"
-        href="images/c-alphabet-letter-logo-for-business-and-company-with-wings-and-black-and-white-grey-color-corporate-brading-and-lettering-icon-with-simple-design-vector.webp">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saloni- Portfolio</title>
+  <meta name="title" content="Saloni-Portfolio" />
+  <meta name="description"
+    content="Hey Hii ! I'm Saloni & this is my portfolio profile, if you are a recruiter looking for a passionate Backend Developer or Full Stack Developer please feel free to contact me & kindly go through my portfolio" />
 
-    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+  <!-- Github Calender -->
+  <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" /><!-- 
+
+  <---- box icon -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <link rel="stylesheet" href="index.css">
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./image/black (1).png" />
+  <link rel="preload" as="image" href="./image/pattern-2.svg" />
+  <link rel="preload" as="image" href="./image/pattern-3.svg" />
+
+  <link rel="shortcut icon" href="./image/black (1).png" type="image/x-icon">
 </head>
 
-<body>
-    <!--Nav Bar -->
-    <header id="nav-menu">
-        <a href="#" class="logo">Port<span>folio</span></a>
+<body id="top">
 
-        <ul class="navlist">
-            <li><a href="#home" class="active"> Home</a></li>
-            <li><a href="#about"> About</a></li>
-            <li><a href="#skills"> Skills</a></li>
-            <li><a href="#github"> GitHub</a></li>
-            <li><a href="#projects"> Projects</a></li>
-            <li><a href="#contact"> Contact</a></li>
-            <button id="resume-button-1" style="background-color: transparent; border: none;"><a
-                    href="./image/Saloni_Kumari_Resume.pdf" download="Saloni_Kumari_Resume" id="resume-link-1"
-                    class="nav-link resume"
-                    onclick="window.open('https://drive.google.com/file/d/17nWbT4RyIzcw8zrw7VgtrGdiMf3yAe9o/view?usp=share_link')">Resume</a></button>
-            <!-- <a href="./image/Saloni_Kumari_Resume.pdf" target="_blank" download="Saloni_Kumari_Resume" id="resume-link-2" 
-                onclick="window.open('https://drive.google.com/file/d/17nWbT4RyIzcw8zrw7VgtrGdiMf3yAe9o/view?usp=share_link')">Resume</a> -->
-            </button>
-        </ul>
-        </ul>
+  <!-- Navbar   -->
 
-        <div class="bx bx-menu" id="menu-icon">
+  <header class="header">
+    <a href="#" class="logo">Saloni</a>
+    <i class='bx bx-menu' id="menu-icon"></i>
 
-        </div>
-    </header>
-    <!-- home section design -->
-    <section id="home">
-        <div class="nav-link home">
-            <div class="home-text">
-                <span class="text1">Hello</span>
-                <span class="text2">I'm</span>
+    <nav id="nav-menu">
 
-            </div>
-            <h1 id="user-detail-name">Saloni Kumari</h1>
-            <h3 id="user-detail-skill">Full Stack Web <span>Developer.</span></h3>
-            <br>
-            <br>
-            <button class="btn" id="resume-button-2">
-                <a href="./image/Saloni_Kumari_Resume.pdf" target="_blank" download="Saloni_Kumari_Resume"
-                    id="resume-link-2"
-                    onclick="window.open('https://drive.google.com/file/d/17nWbT4RyIzcw8zrw7VgtrGdiMf3yAe9o/view?usp=share_link')">Resume</a>
-            </button>
-        </div>
+      <a class="nav-link home" href="#home">Home</a>
+      <a class="nav-link about" href="#about">About</a>
+      <a class="nav-link skills" href="#skills">Skills</a>
+      <a class="nav-link projects" href="#projects">Projects</a>
+      <a class="nav-link contact" href="#contact">Contact</a>
+
+      <li id="resume-button-1" class="nav-link resume">
+        <a href="image/Saloni-Kumari-Resume.pdf" target="_blank" id="resume-link-1" download="Saloni-Kumari-Resume">Resume
+          <i class='bx bxs-download'></i></a>
+      </li>
+
+    </nav>
+  </header>
+  <!--  Navbar Ends  -->
 
 
-    </section>
 
-    <!--About -->
-    <section class="about section" id="about">
-        <div class="about-img">
-            <img class="home-img" src="./image/black (1).png" alt="">
-        </div>
+  <!--  Home Section --->
+  <section class="home" id="home">
 
-        <div class="nav-link about">
-            <h1>About <span>Me</span></h1>
-            <h2 id="user-detail-name">I'm <span>Saloni Kumari</span> from Bihar</h2>
-            <h4>Full Stack Developer</h4>
-            <p id="user-detail-intro">Aspiring Node JS Backend developer skilled in NodeJS, ExpressJS, MongoDB
-                with a good grasp on core JavaScript concepts. Self-motivated with a strong problem-solving mindset
-                and curious learner.Keen interest in building user-centric products.
-                Looking forward to working in a challenging role with a growth-oriented organization
-            </p>
-            <button class="btn" style="font-size: 20px; margin-bottom:3px ;margin-top:3px">
-                <a id="resume-button-2" style="color: #fff;padding: 2px; text-decoration: none;"
-                    href="./image/Saloni_Kumari_Resume.pdf" target="_blank" download="Saloni_Kumari_Resume"
-                    onclick="window.open('https://drive.google.com/file/d/17nWbT4RyIzcw8zrw7VgtrGdiMf3yAe9o/view?usp=share_link')">Resume</a></button>
-        </div>
+    <div class="home-content">
+      <h3>Hello, it's Me</h3>
 
-    </section>
+      <h1 id="user-detail-name">Saloni Kumari</h1>
+      <h3>And I'm a <br><span class="multiple-text"></span></h3>
+
+      <div class="social-media">
+        <a href="https://github.com/Saloni0282"><i class='bx bxl-github'></i></a>
+        <a href="https://www.linkedin.com/in/saloni0021/"><i class='bx bxl-linkedin'></i></a>
+
+      </div>
+
+      <li id="resume-button-2">
+        <a href="image/Saloni-Kumari-Resume.pdf" target="_blank" id="resume-link-2" class="button"
+          download="Saloni-Kumari-Resume">Resume <i class='bx bxs-download'></i></a>
+      </li>
 
 
-    <!---========Education ======--->
-    <section class="education section" id="education">
-        <h1 class="section-title">Education</h1>
-        <div class="education-container bd-grid">
-
-            <div class="education-data">
-                <div class="education-names">
-                    <span class="education-name">Full Stack Web Development</span>
-                    <p class="education-platform ">Masai School</p>
-                    <p class="education-duration ">October 2022 - July 2023</p>
-
-                </div>
-            </div>
-        </div>
-        <div class="education-container bd-grid">
-
-            <div class="education-data">
-                <div class="education-names">
-                    <span class="education-name">BCA</span>
-                    <p class="education-platform ">L.S.College, Muzaffarpur</p>
-                    <p class="education-duration ">September 2017 - April 2020</p>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--Skills -->
-
-
-    <section id="skills">
-
-        <div class="main-text">
-            <h2><span>My </span>Skills</h2>
-        </div>
-
-        <div class="nav-link skills" id="skills-part">
-            <div class="skills-card">
-                <div class="skills-card-img">
-                    <img src="./image/html" width="35%" height="40px" alt="HTML" />
-                </div>
-                <h3 class="skills-card-name">HTML</h3>
-            </div>
-
-            <div class="skills-card">
-                <div class="skills-card-img">
-                    <img src="./image/css.png" width="35%" height="40px" alt="CSS" />
-                </div>
-                <h3 class="skills-card-name">CSS</h3>
-            </div>
-
-            <div class="skills-card">
-                <div class="skills-card-img">
-                    <img width="35%" height="40px"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                        alt="ExpressJS">
-                    <!-- <i style="font-size: 40px;" class='bx bxl-javascript' ></i> -->
-                </div>
-                <h3 class="skills-card-name">JavaScript</h3>
-            </div>
-
-            <div class="skills-card">
-                <div class="skills-card-img">
-                    <img width="35%" height="40px" src="./image/icons8-express-js-100.png" alt="ExpressJS">
-                </div>
-                <h3 class="skills-card-name">ExpressJS</h3>
-            </div>
-
-            <div class="skills-card">
-                <div class="skills-card-img">
-                    <img width="35%" height="40px"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
-                        alt="MongoDB">
-                    <!-- <i style="font-size: 40px;" class='bx bxl-mongodb'  ></i> -->
-                </div>
-                <h3 class="skills-card-name">MongoDB</h3>
-            </div>
-
-            <div class="skills-card">
-                <div class="skills-card-img">
-                    <img width="35%" height="40px"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-                        alt="NodeJS">
-                    <!-- <i style="font-size: 40px;" class='bx bxl-nodejs' ></i> -->
-                </div>
-                <h3 class="skills-card-name">Node JS</h3>
-            </div>
-            <div class="skills-card">
-                <div class="skills-card-img">
-                    <i style="font-size: 30px;" class="bx bxl-github"></i>
-                </div>
-                <h3 class="skills-card-name">GitHub</h3>
-            </div>
-
-            <div class="skills-card">
-                <div class="skills-card-img">
-                    <img width="35%" height="40px"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySql">
-                </div>
-                <h3 class="skills-card-name">MySql</h3>
-
-            </div>
-
-            <div class="skills-card">
-                <div class="skills-card-img">
-                    <img width="35%" height="40px"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg"
-                        alt="socketio">
-                </div>
-                <h3 class="skills-card-name">Socket.io</h3>
-            </div>
-
-            <div class="skills-card">
-                <div class="skills-card-img">
-                    <img width="35%" height="40px" src="image/redis.svg" alt="Redis">
-                </div>
-                <h3 class="skills-card-name">Redis</h3>
-            </div>
-
-            <div class="skills-card">
-                <div class="skills-card-img">
-                    <img width="35%" height="40px" src="./image/postman-removebg-preview.png" alt="Postman">
-                </div>
-                <h3 class="skills-card-name">Postman</h3>
-            </div>
-
-            <div class="skills-card">
-                <div class="skills-card-img">
-                    <img width="35%" height="40px"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
-                    <!-- <i style="font-size: 40px;" class="bx bxl-git" ></i> -->
-                </div>
-                <h3 class="skills-card-name">Git</h3>
-            </div>
-
-            <div class="skills-card">
-                <div class="skills-card-img">
-                    <img width="35%" height="40px" src="./image/npm.svg" alt="">
-                </div>
-                <h3 class="skills-card-name">NPM</h3>
-            </div>
-
-            <div class="skills-card">
-                <div class="skills-card-img">
-                    <img width="35%" height="40px"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
-                        alt="vscode">
-                </div>
-                <h3 class="skills-card-name">VSCode</h3>
-            </div>
-
-            <div class="skills-card">
-                <div class="skills-card-img">
-                    <img width="35%" height="40px"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
-                        alt="Bootstrap">
-                </div>
-                <h3 class="skills-card-name">Bootstrap</h3>
-            </div>
-
-            <div class="skills-card">
-                <div class="skills-card-img">
-                    <img width="35%" height="40px" src="./image/netlify-removebg-preview.png" alt="">
-                </div>
-                <h3 class="skills-card-name">Netlify</h3>
-            </div>
-
-            <div class="skills-card">
-                <div class="skills-card-img">
-                    <img width="35%" height="40px" src="./image/cyclic.png" alt="">
-                </div>
-                <h3 class="skills-card-name">Cyclic</h3>
-            </div>
-
-            <div class="skills-card">
-                <div class="skills-card-img">
-                    <i style="font-size: 30px;" class="fa-solid fa-cubes"></i>
-                </div>
-                <h3 class="skills-card-name">DSA</h3>
-            </div>
-        </div>
-
-    </section>
-
-    <!------------------------------------ GitHub----------------------------------- -->
-    <div class="max-width nav-link github" id="github">
-        <div class="main-text">
-            <h2><span>GitHub </span>Stats</h2>
-        </div>
-        <div id="stat">
-            <div>
-                <img class="ht1" id="github-stats-card"
-                    src='https://github-readme-stats.vercel.app/api?username=saloni0282&show_icons=true&locale=en&theme=dark&background=000000'>
-            </div>
-            <div>
-                <img class="ht1" id="github-top-langs"
-                    src='https://github-readme-stats.vercel.app/api/top-langs?username=saloni0282&show_icons=true&locale=en&layout=compact&theme=dark&background=000000'>
-            </div>
-            <div>
-                <img class="ht1" id="github-streak-stats"
-                    src='https://github-readme-streak-stats.herokuapp.com?user=Saloni0282&theme=dark&background=000000'>
-            </div>
-        </div>
-
-
-        <div id="calendar_Saloni">
-            <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-            <link rel="stylesheet"
-                href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
-
-            <div class="calendar react-activity-calenda" id="calendar">
-                Loading the data just for you.
-            </div>
-
-            <script>
-                GitHubCalendar(".calendar", "Saloni0282");
-                GitHubCalendar(".calendar", "Saloni0282", { responsive: true });
-            </script>
-        </div>
     </div>
 
-    <!-------------------------------------------- Project Starts--------------------------------------------------------------->
+    <div class="home-image">
+      <img class="home-img" src="./image/black (1).png" alt="profile-pic" />
+
+      <img src="./image/pattern-2.svg" width="27" height="26" alt="shape" class="shape shape-1" />
+
+      <img src="./image/pattern-3.svg" width="27" height="26" alt="shape" class="shape shape-2" />
+    </div>
+
+    <img src="./image/shadow-1.svg" width="500" height="800" alt="" class="hero-bg hero-bg-1" />
+
+    <img src="./image/shadow-2.svg" width="500" height="500" alt="" class="hero-bg hero-bg-2" />
+    </div>
+  </section>
+  <!-- Home Section Ends  -->
 
 
-    <section class="project" id="projects">
-        <!-- <h2 class="heading">My
+
+  <!--  About Section  -->
+
+  
+     <section class="about section" id="about">
+    <div class="about-img">
+      <img class="home-img" src="" alt="">
+    </div>
+
+    <div class="nav-link about">
+      <h1>About <span>Me</span></h1>
+      <h2 id="user-detail-name">I'm <span>Saloni Kumari</span> from Muzaffarpur,Bihar</h2>
+      <h4>Full Stack Web Developer</h4>
+      <p id="user-detail-intro">
+        An enthusiastic full stack Web Developer with
+        expertise in the MERN stack. Proven track record of
+        crafting innovative web solutions through solo and
+        collaborative projects. Demonstrated ability to adapt
+        quickly, leveraging Generative AI, to master new tech
+        stacks, and deliver exceptional results
+
+      </p>
+    </div>
+
+  </section>
+
+
+
+  <!--  About Section End  -->
+
+
+  <!------------------- skills start--------------->
+  <section id="skills" class="skills">
+    <div class="container tags">
+      <h2 class="heading">Skills &
+        <span>Abilities</span>
+      </h2>
+
+      <ul class="grid-list">
+        <li>
+          <button class="skills-card tag-btn">
+            <img src="./image/html" class="skills-card-img" width="32" height="32" loading="lazy" alt="HTML" />
+
+            <p class="skills-card-name">HTML</p>
+          </button>
+        </li>
+
+        <li>
+          <button class="skills-card tag-btn">
+            <img src="./image/css.png" class="skills-card-img" width="32" height="32" loading="lazy" alt="CSS" />
+
+            <p class="skills-card-name">CSS</p>
+          </button>
+        </li>
+
+        <li>
+          <button class="skills-card tag-btn">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              class="skills-card-img" width="32" height="32" loading="lazy" alt="JavaScript" />
+
+            <p class="skills-card-name">JavaScript</p>
+          </button>
+        </li>
+
+        <li>
+          <button class="skills-card tag-btn">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+              class="skills-card-img" width="32" height="32" loading="lazy" alt="NodeJS" />
+
+            <p class="skills-card-name">NodeJS</p>
+          </button>
+        </li>
+
+        <li>
+          <button class="skills-card tag-btn">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+              class="skills-card-img" width="32" height="32" loading="lazy" alt="Express" />
+
+            <p class="skills-card-name">Express</p>
+          </button>
+        </li>
+
+        <li>
+          <button class="skills-card tag-btn">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+              class="skills-card-img" width="32" height="32" loading="lazy" alt="MongoDB" />
+
+            <p class="skills-card-name">MongoDB</p>
+          </button>
+        </li>
+
+        <li>
+          <button class="skills-card tag-btn">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg"
+              class="skills-card-img" width="32" height="32" loading="lazy" alt="Mongoose" />
+
+            <p class="skills-card-name">Socket.io</p>
+          </button>
+        </li>
+        <li>
+          <button class="skills-card tag-btn">
+            <img class="skills-card-img" src="./image/react.png" width="32" height="32" loading="lazy" />
+
+            <p class="skills-card-name">React</p>
+          </button>
+        </li>
+        <li>
+          <button class="skills-card tag-btn">
+            <img class="skills-card-img"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="32" height="32"
+              loading="lazy" />
+
+            <p class="skills-card-name">MySQL</p>
+          </button>
+        </li>
+        <li>
+          <button class="skills-card tag-btn">
+            <img src="./image/redis.svg" class="skills-card-img" width="32" height="32" loading="lazy" alt="GIT" />
+
+            <p class="skills-card-name">Redis</p>
+          </button>
+        </li>
+        <li>
+          <button class="skills-card tag-btn">
+            <img class="skills-card-img"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="32"
+              height="32" loading="lazy" />
+
+            <p class="skills-card-name">Bootstrap </p>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    
+    <div class="container tags">
+      <h2 class="heading">Tools
+      </h2>
+
+      <ul class="grid-list">
+        
+        <li>
+          <button class="skills-card tag-btn">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="32" height="32"
+              loading="lazy" class="skills-card-img" />
+
+            <p class="skills-card-name">GIT</p>
+          </button>
+        </li>
+
+        <li>
+          <button class="skills-card tag-btn">
+            <img class="skills-card-img" src="./image/npm.svg" width="32" height="32" loading="lazy" alt="NPM" />
+
+            <p class="skills-card-name">NPM</p>
+          </button>
+        </li>
+
+        <li>
+          <button class="skills-card tag-btn">
+            <img class="skills-card-img"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="32" height="32"
+              loading="lazy" />
+
+            <p class="skills-card-name">VSCode</p>
+          </button>
+        </li>
+
+    
+      </ul>
+    </div>
+
+    <div class="skills-container">
+      <div class="skills-card-1">
+        <i class='bx bx-code-alt' class="skills-card-img"></i>
+        <h3 class="skills-card-name">Front-End Development</h3>
+        <p>HTML | CSS | JavaScript</p>
+        <a href="#" class="button">Read More</a>
+      </div>
+      <div class="skills-card-1">
+        <i class='bx bxs-data' class="skills-card-img"></i>
+        <h3 class="skills-card-name">Back-End Development</h3>
+        <p>NodeJS | Express | MongoDB </p>
+        <a href="#" class="button">Read More</a>
+      </div>
+      <div class="skills-card-1">
+        <i class='bx bxl-codepen' class="skills-card-img"></i>
+        <h3 class="skills-card-name">Data Structure Algorithm</h3>
+        <p> LinkedList | Recursion | Binary </p>
+        <a href="#" class="button">Read More</a>
+      </div>
+    </div>
+
+  </section>
+
+  <!----------------------- skills ends ------------->
+
+
+
+  <!------------------ Project Starts---------------->
+
+
+  <section class="project" id="projects">
+    <h2 class="heading">My
       <span>Projects</span>
-    </h2> -->
-        <div class="main-text">
-            <h2><span>My </span>Projects</h2>
-        </div>
-        <div class="project-container">
-            <div class="project-card">
-                <img src="./image/brief.png" alt="">
-                <div class="project-layer">
-                    <h4 class="project-title">Briefly</h4>
-                    <p class="project-description"> This project is a simple URL shortener service, where users can
-                        input a long
-                        URL and get a shorter one in return..and will generate QR code also for URL and UPI</p>
-                    <h5 class="project-tech-stack">Redis | NodeJs | MongoDB | Express</h5>
-                    <div class="projectlinks">
-                        <a href="https://github.com/vaibhzz101/lacking-berry-1088" class="project-github-link"><i
-                                class='bx bxl-github'></i></a>
-                        <a href="https://lacking-berry-1088.netlify.app/" class="project-deployed-link"><i
-                                class='bx bxl-netlify'></i></a>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="./image/dentdesk.png" alt="">
-                <div class="project-layer">
-                    <h4 class="project-title">DentDesk</h4>
-                    <p class="project-description"> eDent Desk is a dental appointment booking system with
-                        authentication, user scheduling, doctor approval, admin management, advanced filtering,
-                        appointment tracking,
-                        responsive design, and email notifications using Nodemailer for status updates.</p>
-                    <h5 class="project-tech-stack">HTML| CSS | NodeJs | MongoDB</h5>
-                    <div class="projectlinks">
-                        <a href="https://github.com/Saloni0282/native-fog-9540" class="project-github-link"><i
-                                class='bx bxl-github'></i></a>
-                        <a href="https://dent-desk-management-app.netlify.app/index.html"
-                            class="project-deployed-link"><i class='bx bxl-netlify'></i></a>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="./image/Hangout.png" alt="">
-                <div class="project-layer">
-                    <h4 class="project-title">Real-Time-Chat-Application (Clone)</h4>
-                    <p class="project-description">It's a Real-Time-Chat-Application
-                        for One-On-One Chat with Your Friends</p>
-                    <h5 class="project-tech-stack">Vanilla JS | Node.js | Express.js | MongoDB |Socket.io |passport</h5>
-                    <div class="projectlinks">
-                        <a href="https://github.com/Saloni0282/spry-smash-650" class="project-github-link"><i
-                                class='bx bxl-github'></i></a>
-                        <a href="https://64802391adddc43187b1cf49--lambent-trifle-ac5b1d.netlify.app/"
-                            class="project-deployed-link"><i class='bx bxl-netlify'></i></a>
-                    </div>
-
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="./image/Anthro.png" alt="">
-                <div class="project-layer">
-                    <h4 class="project-title">Anthropology (Clone)</h4>
-                    <p class="project-description"> Its an e-commerse website of E-shopping Mart.
-                        Here you can buy all the product which will use in day to day life.</p>
-                    <h5 class="project-tech-stack">HTML | CSS | JavaScript</h5>
-                    <div class="projectlinks">
-                        <a href="https://github.com/Saloni0282/cloudy-thing-7898" class="project-github-link"><i
-                                class='bx bxl-github'></i></a>
-                        <a href="https://statuesque-rolypoly-551cfe.netlify.app" class="project-deployed-link"><i
-                                class='bx bxl-netlify'></i></a>
-                    </div>
-
-                </div>
-            </div>
-
-    </section>
-    <!-------------------------------------------- Project Ends--------------------------------------------------------------->
-
-
-    <!-- contact -->
-    <section class="nav-link contact" id="contact">
-        <div class="nav-link-contact">
-            <h2>Contact <span>Me!</span></h2>
-            <h4>Let's Work Together</h4>
-            <div class="list">
-                <li><a href="#">Muzaffarpur - Bihar</a></li>
-                <li><a href="#" id="contact-email">salonishalu2000@gmail.com</a></li>
-                <li><a href="#" id="contact-phone">8102481833</a></li>
-                <li><a href="https://www.linkedin.com/in/saloni0021/" id="contact-linkedin"> Linkedin:Saloni Kumari</a>
-                </li>
-            </div>
-            <div class="contact-icons">
-                <a href="https://www.linkedin.com/in/saloni0021/" id="contact-linkedin"><i
-                        class="bx bxl-linkedin"></i></a>
-                <a href="#"><i class="bx bxl-facebook"></i></a>
-                <a href="https://github.com/Saloni0282" id="contact-github"><i class="bx bxl-github"></i></a>
-                <!-- <a href="#"><i class="bx bxl-instagram"></i></a>
-            <a href="#"><i class="bx bxl-dribbble"></i></a> -->
-            </div>
-
+    </h2>
+    <div class="project-container">
+      <div class="project-card">
+        <div class="product-image">
+          <img src="./image/tripvilaa.png" alt="">
         </div>
 
-        <div class="contact-form">
-            <form action="https://formspree.io/f/meqbjllr" method="POST">
-                <input name="name" placeholder="Enter Your Name" required>
-                <input type="name" name="email" placeholder="Enter Your Email" required>
-                <input type="subject" placeholder="Enter Your Subject">
-                <textarea name="message" id="" cols="40" rows="10" placeholder="Enter Your Message"></textarea>
-                <input type="submit" value="submit" class="send">
-            </form>
-        </div>
 
-    </section>
+        <div class="product-info">
+          <div class="heading-sk">
+            <h1 class="project-title">TripVilla(Clone) </h1>
+          </div>
 
-    <!-- Footer -->
-    <section class="footer">
-        <div class="last-text">
-            <p> Created by Saloni Kumari
-                <i style="color: crimson;" class="fas fa-heart"></i>
-                All Rights Reserved 2023.
+          <div class="description-sk">
+            <p class="project-description">Created a clone of TripVilla, offering top holiday home
+bookings for villas, apartments, and homestays.
             </p>
+          </div>
+
+          <div class="tech-st">
+
+            <div>
+              <h1>Tech Stack</h1>
+            </div>
+            <div class="project-tech-stack">
+              <div class="imgdiv">
+                <img class="img-fz" src="./image/html" alt="">
+              </div>
+              <div>
+               
+              </div>
+              <div class="imgdiv">
+                <img class="img-fz" src="./image/css.png" alt="">
+              </div>
+              <div>
+               
+              </div>
+
+              <div class="imgdiv">
+                <img class="img-saloni" src="./image/js.png" alt="">
+              </div>
+              <div>
+               
+              </div>
+            </div>
+           
+          </div>
+
+          <div>
+            <div class="projectlink-sk">
+              <a href="https://github.com/Saloni0282/giddy-birthday-6559">
+                <button>
+                  <div id="salonigit">
+                    <i class='bx bxl-github'></i>
+                    <p>GitHub</p>
+                  </div>
+                </button>
+              </a>
+
+              <a href="https://652e3cef00b6a5006e6ee93b--deft-starburst-526307.netlify.app/">
+                <button>
+                  <div id="salonigit">
+                    <i class='bx bxl-netlify'></i>
+                    <p>Deployed</p>
+                  </div>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="product-image">
+          <img src="./image/Anthro.png" alt="">
+        </div>
+        <div class="product-info">
+          <div class="heading-sk">
+            <h1 class="project-title">Anthropology (Clone)</h1>
+          </div>
+
+          <div class="description-sk">
+            <p class="project-description">Its an e-commerse website of E-shopping Mart.
+                        Here you can buy all the product which will use in day to day life.
+            </p>
+          </div>
+
+         <div class="tech-st">
+
+            <div>
+              <h1>Tech Stack</h1>
+            </div>
+            <div class="project-tech-stack">
+              <div class="imgdiv">
+                <img class="img-saloni" src="./image/html" alt="">
+              </div>
+              <div>
+                
+              </div>
+              <div class="imgdiv">
+                <img class="img-saloni" src="./image/css.png" alt="">
+              </div>
+              <div>
+               
+              </div>
+
+              <div class="imgdiv">
+                <img class="img-saloni" src="./image/js.png" alt="">
+              </div>
+              
+              <div>
+               
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="projectlink-sk">
+              <a href="https://github.com/Saloni0282/cloudy-thing-7898">
+                <button>
+                  <div id="salonigit">
+
+                    <i class='bx bxl-github'></i>
+                    <p>GitHub</p>
+
+                  </div>
+
+                </button>
+              </a>
+
+              <a href="https://statuesque-rolypoly-551cfe.netlify.app">
+                <button>
+
+                  <div id="salonigit">
+
+                    <i class='bx bxl-netlify'></i>
+                    <p>Deployed</p>
+
+                  </div>
+
+                </button>
+              </a>
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    
+   
+
+      <div class="project-card">
+        <div class="product-image">
+          <img src="./image/brief.png" alt="">
         </div>
 
-        <!-- scroll-top -->
-        <div class="top">
-            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+
+        <div class="product-info">
+          <div class="heading-sk">
+            <h1 class="project-title">URL Shortner (Clone)</h1>
+          </div>
+
+          <div class="description-sk">
+            <p class="project-description">Created Briefly, a tool to generate shortened links for
+                lengthy website addresses and generate QR code for URL and UPI
+            </p>
+          </div>
+
+          <div class="tech-st">
+
+            <div>
+              <h1>Tech Stack</h1>
+            </div>
+            <div class="project-tech-stack">
+              <div class="imgdiv">
+                <img class="img-saloni" src="./image/html" alt="">
+              </div>
+              <div>
+                
+              </div>
+              <div class="imgdiv">
+                <img class="img-saloni" src="./image/css.png" alt="">
+              </div>
+              <div>
+               
+              </div>
+
+              <div class="imgdiv">
+                <img class="img-saloni" src="./image/js.png" alt="">
+              </div>
+              <div>
+               
+              </div>
+              <div class="imgdiv">
+                <img class="img-saloni" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="">
+              </div>
+              <div>
+               
+              </div>
+              <div class="imgdiv">
+                <img class="img-saloni" src="./image/node_icon.webp" alt="">
+              </div>
+              
+              <div>
+               
+              </div>
+              <div class="imgdiv">
+                <img class="img-saloni" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="">
+              </div>
+              <div>
+               
+              </div>
+            </div>
+          </div>
+
+         
+          <div>
+            <div class="projectlink-sk">
+              <a href="https://github.com/Saloni0282/Briefly-URL-Shortner">
+                <button>
+                  <div id="salonigit">
+
+                    <i class='bx bxl-github'></i>
+                    <p>GitHub</p>
+
+                  </div>
+
+                </button>
+              </a>
+
+              <a href="https://lacking-berry-1088.netlify.app/">
+                <button>
+
+                  <div id="salonigit">
+
+                    <i class='bx bxl-netlify'></i>
+                    <p>Deployed</p>
+
+                  </div>
+
+                </button>
+              </a>
+
+            </div>
+          </div>
         </div>
-    </section>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="./index.js"></script>
+      </div>
+
+
+   
+      <div class="project-card">
+        <div class="product-image">
+          <img src="./image/Hangout.png" alt="">
+        </div>
+
+        <div class="product-info">
+          <div class="heading-sk">
+            <h1 class="project-title">Chat App(Clone)</h1>
+          </div>
+
+          <div class="description-sk">
+            <p class="project-description">It's a Real-Time-Chat-Application
+                        for One-On-One Chat with Your Friends
+            </p>
+          </div>
+
+          <div class="tech-st">
+
+            <div>
+              <h1>Tech Stack</h1>
+            </div>
+            <div class="project-tech-stack">
+              <div class="imgdiv">
+                <img class="img-saloni" src="./image/html" alt="">
+              </div>
+              <div>
+                
+              </div>
+              <div class="imgdiv">
+                <img class="img-saloni" src="./image/css.png" alt="">
+              </div>
+              <div>
+               
+              </div>
+
+              <div class="imgdiv">
+                <img class="img-saloni" src="./image/js.png" alt="">
+              </div>
+              <div>
+               
+              </div>
+              <div class="imgdiv">
+                <img class="img-saloni" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="">
+              </div>
+              <div>
+               
+              </div>
+              <div class="imgdiv">
+                <img class="img-saloni" src="./image/node_icon.webp" alt="">
+              </div>
+              
+              <div>
+               
+              </div>
+              <div class="imgdiv">
+                <img class="img-saloni" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="">
+              </div>
+              <div>
+               
+              </div>
+              <div class="imgdiv">
+                <img class="img-saloni" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg" alt="">
+              </div>
+              <div>
+               
+              </div>
+            </div>
+          </div>
+        
+          <div>
+            <div class="projectlink-sk">
+              <a href="https://github.com/Saloni0282/spry-smash-650">
+                <button>
+                  <div id="salonigit">
+
+                    <i class='bx bxl-github'></i>
+                    <p>GitHub</p>
+
+                  </div>
+
+                </button>
+              </a>
+
+              <a href="https://64802391adddc43187b1cf49--lambent-trifle-ac5b1d.netlify.app/">
+                <button>
+
+                  <div id="salonigit">
+
+                    <i class='bx bxl-netlify'></i>
+                    <p>Deployed</p>
+
+                  </div>
+
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!---------------- Project Ends----------------------->
+
+
+
+  <!-------------------- GitHub starts ----------------->
+
+  <div id="github-stats">
+    <h2 class="heading">GitHub
+      <span class="span">Statistics</span>
+    </h2>
+    <div class="container">
+
+      <div>
+        <div>
+          <div class="calendar" id="mycalender" class="react-activity-calendar" >
+            <img style="width:100%;" id="github-contributions"
+            src="https://ghchart.rshah.org/30a14e/Saloni0282" alt="Github chart" />
+        </div>
+        <br />
+        <div align="center" class="stats">
+          <a href="https://github.com/Saloni0282">
+            <img id="github-streak-stats"
+              src="https://github-readme-streak-stats.herokuapp.com/?user=Saloni0282&theme=black-ice&hide_border=true&stroke=0000&background=060A0CD0"
+              alt="" />
+            <br />
+            <br />
+
+            <img id="github-stats-card"
+              src="https://github-readme-stats.vercel.app/api?username=Saloni0282&show_icons=true&count_private=true&theme=react&hide_border=true&bg_color=0D1117" />
+
+            <br />
+            <br />
+
+            <img
+              src="https://github-readme-stats.vercel.app/api/top-langs?username=Saloni0282&show_icons=true&locale=en&layout=compact&theme=react&hide_border=true&bg_color=0D1117"
+              id="github-top-langs" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!----------------------------------------------------- GitHub ends ----------------------------------------------------------------->
+
+  <!--------------------------------------------  Contacts Starts --------------------------------------------------------------->
+
+
+
+  <div id="contact">
+    <h2 class="heading">Contact
+      <span>Me</span>
+    </h2>
+    <div class="contact_me">
+      <p id="contact-phone">Contact Number - +91 8102481833</p>
+      <p>
+      <p id="contact-email"> <a href="mailto:salonishalu2000@gmail.com"></a>
+        Email Address-salonishalu2000@gmail.com
+      </p>
+      </p>
+      <p>Address- Muzaffarpur, Bihar-842001</p>
+
+      <div>
+        <a class="project-link linkdk" id="contact-linkedin" target="_blank"
+          href="https://www.linkedin.com/in/saloni0021/"><i style="font-size: 40px" class='bx bxl-linkedin'
+            aria-hidden="true"></i></a>
+
+        <a class="project-link linkd" id="contact-github" target="_blank" href="https://github.com/Saloni0282"><i
+            style="font-size: 40px" class='bx bxl-github' aria-hidden="true"></i></a>
+
+        <a class="project-link linkd" href="mailto:salonishalu2000@gmail.com" target="_blank"><i
+            style="font-size: 40px" class='bx bx-envelope' aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </div>
+
+
+  <!--------------------------------------------  Contacts Ends --------------------------------------------------------------->
+
+
+  <!-- ------------------------------------------  Footer Starts- ---------------------------------------------------------- -->
+
+
+  <footer class="footer">
+    <div class="footer-text">
+
+      <p> Copyright &copy; 2023 by Saloni All right Reserved.</p>
+    </div>
+    <div class="footer-iconTop">
+      <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+  </footer>
+
+  <!-- ------------------------------------------  Footer Ends ------------------------------------------------------------- -->
+
+
+  <!-- scrollreveal -->
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- Typed js -->
+  <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+
+  <!-- Main Script -->
+  <script src="index.js"></script>
+
+
 </body>
 
 </html>
+
+
