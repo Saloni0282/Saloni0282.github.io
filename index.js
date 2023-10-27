@@ -45,7 +45,7 @@ menuIcon.onclick = () => {
 
 
 // or enable responsive functionality:
-GitHubCalendar(".calendar", "prabhatgupta11", { responsive: true });
+GitHubCalendar(".calendar", "Saloni0282", { responsive: true });
 
 // *=============================== resume open in new tab ==================================
 
