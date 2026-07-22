@@ -590,7 +590,7 @@ margin-top: 15px;
     #Tech Stacks
   \*-----------------------------------*/
   
-  .tags .grid-list { grid-template-columns: repeat(auto-fit, minmax(125px, 1fr)); }
+  .tags .grid-list { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
   
 .container { padding-inline: 16px; }
   .tag-btn {
@@ -598,7 +598,7 @@ margin-top: 15px;
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 18px;
+    padding: 12px 14px;
     border-radius: var(--radius-16);
   }
   
@@ -622,6 +622,7 @@ margin-top: 15px;
   .tag-btn img {
     width: 100%;
     max-width: 32px;
+    flex-shrink: 0;
   }
   
   
