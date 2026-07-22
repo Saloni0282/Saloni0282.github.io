@@ -107,7 +107,7 @@ body {
   section {
 
     min-height: 70vh;
-    padding: 10rem 9% 2rem;
+    padding: 10rem 9% 10rem;
   }
   .tags h2{
     margin-top: 50px;
@@ -293,6 +293,7 @@ span {
     gap: 2rem;
     margin-bottom: 80px;
     background: var(--bg-oxford-blue);
+    padding-bottom: 10rem;
   }
   #about h1{
    margin-top: 50px;
@@ -309,11 +310,7 @@ span {
      font-size: 26px;
     
    }
-   #about p{
-    padding-top: 15px;
-     font-size: 20px;
-    
-   }
+    /* #about p has been removed to avoid specificity overrides and clutter */
   
   .heading {
     text-align: center;
@@ -329,8 +326,62 @@ span {
   }
   .about-content p {
     font-size: 1.6rem;
+    line-height: 1.6;
+    color: var(--text-wild-blue-yonder);
     margin: 2rem 0 3rem;
     text-align: left;
+  }
+
+  /* About Info Cards Grid */
+  .about-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .about-info .info-card {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: rgba(2, 23, 31, 0.6);
+    border: 1px solid var(--border-prussian-blue);
+    border-radius: var(--radius-16);
+    transition: all 0.3s ease;
+    text-align: left;
+  }
+
+  .about-info .info-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--bg-carolina-blue);
+    box-shadow: 0 5px 15px rgba(80, 168, 168, 0.15);
+  }
+
+  .about-info .info-card i {
+    font-size: 2.8rem;
+    color: var(--bg-carolina-blue);
+    flex-shrink: 0;
+  }
+
+  .about-info .info-card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .about-info .info-card h3 {
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .about-info .info-card span {
+    font-size: 1.4rem;
+    color: var(--text-wild-blue-yonder);
+    line-height: 1.4;
   }
   
   
@@ -527,41 +578,27 @@ margin-top: 15px;
   .project-layer h4 {
     font-size: 3rem;
   }
-  .project-tech-stack  {
-    font-size: 2rem;
-    
-    height:8.5vh;
+  .project-tech-stack {
     display: flex;
-     margin: auto;
-     justify-content: center;
-     
-    
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 10px auto 0;
+    flex-wrap: wrap;
   }
-  .project-tech-stack div{
-
-    justify-content: space-between;
-  }
-  .project-tech-stack h2{
-    font-size: 15px;
-  margin-top:15px;
-   
-  }
-  .project-tech-stack img{
   
-   align-items: center;
+  .imgdiv {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .imgdiv{
-    width: 8%;
-  }
-  .imgdiv img{
-    height:35px;
-
-    padding-top:8px;
-  }
-  .img-saloni div{
-    border: solid crimson;
-    width: 200px;
-    height: 50px;
+  
+  .project-tech-stack img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
   }
   .project-layer p {
     font-size: 1.5rem;
