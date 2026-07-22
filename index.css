@@ -680,81 +680,131 @@ margin-top: 15px;
 /*-----------------------------------Contact----------------------------------------*/
 
 #contact {
-  height: 400px;
   width: 100%;
   /* color: var(--second-bg-color); */
-  background: var(--);
   background: var(--bg-oxford-blue);
   text-align: center;
+  padding: 6rem 9%;
 }
 
-#contact > div > p {
-  color: var(--secondary-color);
+/* Contact Cards Container */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
 }
 
-.contact_me {
-  color: #fff;
+.contact-card {
+  flex: 1;
+  min-width: 250px;
+  max-width: 320px;
+  background: rgba(13, 17, 23, 0.4);
+  border: 1px solid var(--border-prussian-blue);
+  border-radius: var(--radius-16);
+  padding: 30px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
-  margin-top: 50px;
+  gap: 12px;
+  transition: all 0.3s ease;
 }
 
-.contact_me > p > a > span {
-  text-decoration: underline;
+.contact-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--bg-carolina-blue);
+  box-shadow: 0 8px 25px rgba(80, 168, 168, 0.15);
 }
 
-
-
-.contact_me > div {
-  margin-top: 20px;
-}
-
-.contact_me > p {
-  margin-bottom: 20px;
-}
-
-
-
-.project-link {
-  text-align: center;
-  outline: 0;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-#contact-linkedin i {
-  margin-right: 40px;
-}
-
-#contact-github i {
-  margin-right: 40px;
-}
-
-.project-link:hover i {
+.contact-card i {
+  font-size: 3.5rem;
   color: var(--bg-carolina-blue);
-  transition: color 0.3s ease-in, background-color 0.3s ease-in,
-    border-color 0.3s ease-in;
-  scale: 110%;
-  transform: translate3d(0px, -16px, 0px);
-  transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
 }
-.contact_me > div > a > i {
-  transform: translate3d(0px, -8px, -8px);
+
+.contact-card h3 {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.contact-card a, 
+.contact-card span {
+  font-size: 1.4rem;
+  color: var(--text-wild-blue-yonder);
+  transition: color 0.3s ease;
+  word-break: break-all;
+}
+
+.contact-card a:hover {
+  color: var(--bg-carolina-blue);
+}
+
+/* Contact Socials Row */
+.contact-socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.contact-socials .social-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(13, 17, 23, 0.6);
+  border: 1px solid var(--border-prussian-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 2.2rem;
+  transition: all 0.3s ease;
+}
+
+.contact-socials .social-icon:hover {
+  transform: scale(1.15) translateY(-3px);
+  color: var(--bg-carolina-blue);
+  border-color: var(--bg-carolina-blue);
+  box-shadow: 0 5px 15px rgba(80, 168, 168, 0.25);
 }
 
 /* github */
 #github-stats {
   margin-bottom: 70px;
+  justify-content: center;
+  padding: 6rem 9%;
 }
 #resume-button-2 {
   list-style: none;
 }
 
-#github-stats {
+
+.stats-cards-row {
+  display: flex;
   justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#github-streak-stats,
+#github-stats-card,
+#github-top-langs {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-8);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#github-streak-stats:hover,
+#github-stats-card:hover,
+#github-top-langs:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px 15px rgba(80, 168, 168, 0.15);
 }
 
 /*-----------------------------------*\
