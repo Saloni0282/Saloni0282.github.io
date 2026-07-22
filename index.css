@@ -625,6 +625,10 @@ margin-top: 15px;
     flex-shrink: 0;
   }
   
+  .tag-btn i {
+    flex-shrink: 0;
+  }
+  
   
   .skills-card {
     background-color: var(--bg-oxford-blue);
